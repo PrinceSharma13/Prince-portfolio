@@ -1,7 +1,7 @@
 import "./App.css";
 import { ReactTyped } from "react-typed";
 import profile from "./assets/Prince.jpg";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaDatabase } from "react-icons/fa";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa";
@@ -184,7 +184,7 @@ Currently, I am seeking opportunities where I can apply my knowledge, grow as a 
   <div className="project-grid">
 
     <a 
-      href="#"  
+      href="/"  
       target="_blank" 
       rel="noreferrer"
       className="project-link-wrapper"
@@ -200,7 +200,7 @@ Currently, I am seeking opportunities where I can apply my knowledge, grow as a 
           <div className="project-links">
 
             <a 
-              href="#"   
+              href="/"   
               target="_blank" 
               rel="noreferrer"
               onClick={(e) => e.stopPropagation()}
