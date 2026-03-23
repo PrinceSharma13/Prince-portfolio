@@ -1,6 +1,5 @@
 import "./App.css";
 import { ReactTyped } from "react-typed";
-import axios from "axios";
 import profile from "./assets/Prince.jpg";
 import { useEffect, useState } from "react";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaDatabase } from "react-icons/fa";
@@ -13,18 +12,10 @@ import "aos/dist/aos.css";
 
 function App() {
 
-  const [repos,setRepos] = useState([]);
-
   useEffect(()=>{
   AOS.init({ duration: 1000 });
 },[]);
 
-  useEffect(()=>{
-    axios.get("https://api.github.com/users/PrinceSharma13/repos")
-    .then(res=>{
-      setRepos(res.data.slice(0,4));
-    });
-  },[]);
 
   return (
     <div className="container">
